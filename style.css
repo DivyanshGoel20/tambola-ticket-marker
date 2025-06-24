@@ -14,25 +14,40 @@ h1 {
 }
 #uploader {
   margin: 20px 0;
+  padding: 10px 16px;
+  border: 2px dashed #bbb;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  transition: border 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+#uploader:hover, #uploader:focus {
+  border: 2px solid #e67e22;
 }
 #container {
   position: relative;
   display: inline-block;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  margin-top: 16px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.12);
+  border-radius: 12px;
   background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
+  padding: 18px 18px 10px 18px;
 }
 #ticket-img {
   display: block;
   max-width: 90vw;
   max-height: 70vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
 }
 #marker-canvas {
   position: absolute;
   left: 0;
   top: 0;
   pointer-events: auto;
+  border-radius: 8px;
 }
 #save-btn {
   margin: 20px 0 0 0;
@@ -47,4 +62,78 @@ h1 {
 }
 #save-btn:hover {
   background: #c0392b;
+}
+#game-options {
+  margin: 30px 0 10px 0;
+  display: flex;
+  gap: 16px;
+}
+#game-options button {
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#game-options button:hover {
+  background: #217dbb;
+}
+#join-section {
+  margin: 18px 0;
+  display: flex;
+  gap: 10px;
+}
+#join-code {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+}
+#submit-join {
+  padding: 8px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #27ae60;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#submit-join:hover {
+  background: #219150;
+}
+#lobby {
+  margin: 24px 0;
+  padding: 18px 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.10);
+  min-width: 260px;
+  text-align: center;
+}
+#players-list {
+  margin: 12px 0 18px 0;
+  min-height: 24px;
+}
+#start-game {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #e67e22;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#start-game:hover {
+  background: #b95c00;
+}
+#waiting-msg {
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 10px;
 } 
